@@ -12,7 +12,7 @@ Drop it into any app to get full-duplex IPC communication between processes — 
 - **No message merging** — 4-byte length-prefix framing keeps messages intact
 - **Event-driven API** — subscribe to `OnMessageReceived`, `OnClientConnected`, `OnDisconnected`
 - **Configurable** — custom pipe names, max message size, connect timeout
-- **Cross-platform** — Windows, Linux, macOS (.NET 6 / 7 / 8)
+- **Cross-platform** — Windows, Linux, macOS (.NET 8+)
 - **Zero dependencies** — only `System.IO.Pipes` from the BCL
 
 ---
@@ -134,7 +134,7 @@ Every message is sent as a 4-byte integer (message byte length) followed by the 
 ```
 PipeLine/
 ├── src/
-│   └── PipeLine/                   ← 📦 The library (publish this to NuGet)
+│   └── PipeLine/                  
 │       ├── PipeLine.csproj
 │       ├── PipeServer.cs       ← Public server class
 │       ├── PipeClient.cs       ← Public client class
@@ -156,8 +156,8 @@ PipeLine/
 ## 🛠️ Building from Source
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/PipeLine.git
-cd PipeChat
+git clone https://github.com/Rifat-H7/PipeLine.git
+cd PipeLine
 
 # Build everything
 dotnet build
