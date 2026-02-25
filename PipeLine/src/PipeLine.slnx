@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="PipeLine.ClientExample/PipeLine.ClientExample.csproj" Id="267d674a-0e07-4825-86db-6d1328547fb2" />
+  <Project Path="PipeLine.ServerExample/PipeLine.ServerExample.csproj" Id="bbb2474c-a411-4a17-93c6-74e1dc12d0b1" />
+  <Project Path="PipeLine/PipeLine.csproj" />
+</Solution>
