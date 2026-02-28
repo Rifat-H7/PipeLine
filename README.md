@@ -20,7 +20,7 @@ Drop it into any app to get full-duplex IPC communication between processes — 
 ## 📦 Installation
 
 ```bash
-dotnet add package PipeLine
+dotnet add package RHFactory.PipeLine
 ```
 
 ---
@@ -133,19 +133,20 @@ Every message is sent as a 4-byte integer (message byte length) followed by the 
 
 ```
 PipeLine/
-├── src/
-│   └── PipeLine/                  
-│       ├── PipeLine.csproj
-│       ├── PipeServer.cs       ← Public server class
-│       ├── PipeClient.cs       ← Public client class
-│       ├── PipeOptions.cs      ← Configuration
-│       ├── PipeMessage.cs          ← Message model
-│       └── Internal/
-│           └── PipeMessenger.cs    ← Internal framing engine
+├── PipeLine/                  
+│   ├── PipeLine.csproj
+│   ├── PipeServer.cs
+│   ├── PipeClient.cs
+│   ├── PipeOptions.cs
+│   ├── PipeMessage.cs
+│   ├── Program.cs
+│   └── Internal/
 │
-├── examples/
-│   ├── PipeLine.Example.Server/    ← 🖥️ Example server console app
-│   └── PipeLine.Example.Client/    ← 💻 Example client console app
+├── PipeLine.ClientExample/
+│   └── Program.cs
+│
+├── PipeLine.ServerExample/
+│   └── Program.cs
 │
 ├── PipeLine.sln
 └── README.md
